@@ -4,7 +4,7 @@
  * @param {Array} arr the array to iterate over and project each item via the projection arg
  * @param {(x: any) => any} projection the projection function which receives an item and returns an item
  */
-function mapPolyfill(arr, projection) {
+function map(arr, projection) {
     const result = [];
     for (let i = 0; i < arr.length; i++) {
         const next = arr[i];
@@ -14,4 +14,4 @@ function mapPolyfill(arr, projection) {
     return result;
 }
 
-module.exports = mapPolyfill;
+module.exports = map;
