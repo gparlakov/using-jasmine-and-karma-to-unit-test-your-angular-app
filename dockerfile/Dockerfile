@@ -3,6 +3,7 @@ FROM node:14
 
 # Maintainer name
 LABEL maintainer="educative@educative.io"
+LABEL maintainer1="gparlakov@gmail.com"
 
 # Install Google Chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
