@@ -12,11 +12,11 @@ RUN apt-get update && apt-get install -y google-chrome-stable
 RUN npm install -g @angular/cli
 
 # set the workdir to be the Educative directory
-WORKDIR /usr/local/educative/angular
+WORKDIR /usr/local/educative/unit-testing-course
 
 ADD package.json ./package.json
 # Installing Angular cli and node modules in angular directory
-RUN cd /usr/local/educative/angular && npm i
+RUN cd /usr/local/educative/unit-testing-course && npm i
 
 # Copying angular folder from local directory to Educative directory
 COPY . .
