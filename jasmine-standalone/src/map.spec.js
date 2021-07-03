@@ -1,4 +1,4 @@
-const map = require('./map-polyfill');
+const map = require('./map');
 
 describe('mapPolyfill', () => {
   it('should double the array', () => {
