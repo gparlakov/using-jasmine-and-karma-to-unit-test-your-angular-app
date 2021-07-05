@@ -23,6 +23,9 @@ exports.firstNChars = function firstNChars(text, n) {
   if (typeof n !== 'number') {
     throw new Error(`Unexpected "n" type. Expected "number" got: ${typeof n}`);
   }
+  if(n <= 0) {
+    throw new Error(`Unexpected "n" value. Expected positive number got: ${n}`)
+  }
   /**
    * part 1
    */
