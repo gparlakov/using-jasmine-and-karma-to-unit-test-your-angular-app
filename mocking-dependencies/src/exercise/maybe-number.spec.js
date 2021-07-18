@@ -1,6 +1,6 @@
 const { maybeNumber } = require('./maybe-number');
 
-describe('maybes-string', () => {
+describe('maybe-number', () => {
 
   it('should call the callback if string passed in', () => {
     const spy = jasmine.createSpy('callback');
